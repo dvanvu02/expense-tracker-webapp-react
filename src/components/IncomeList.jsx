@@ -29,7 +29,7 @@ const IncomeList = ({ transactions, onDelete, onDownload, onEmail }) => {
             <div className="flex items-center justify-between">
                 <h5 className="text-lg">Income Sources</h5>
                 <div className="flex items-center justify-end gap-2">
-                    <button disabled={loading} className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 text-gray-800 rounded-md hover:bg-purple-100 hover:text-purple-800" onClick={handleEmail}>
+                    <button disabled={loading} className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 text-gray-800 rounded-md hover:bg-purple-100 hover:text-purple-800 cursor-pointer" onClick={handleEmail}>
                         {loading ? (
                             <>
                                 <LoaderCircle className="w-4 h-4 animated-spin" /> Emailing...
@@ -41,7 +41,7 @@ const IncomeList = ({ transactions, onDelete, onDownload, onEmail }) => {
                         )}
                     </button>
 
-                    <button disabled={loading} className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 text-gray-800 rounded-md hover:bg-purple-100 hover:text-purple-800" onClick={handleDownload}>
+                    <button disabled={loading} className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 text-gray-800 rounded-md hover:bg-purple-100 hover:text-purple-800 cursor-pointer" onClick={handleDownload}>
                         {loading ? (
                             <>
                                 <LoaderCircle className="w-4 h-4 animated-spin" />Downloading...

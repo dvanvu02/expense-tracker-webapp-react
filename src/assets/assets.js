@@ -1,8 +1,9 @@
 import logo from "./logo.png";
 import login_bg from "./login-bg.png";
+import dashboard_preview from "./dashboard-preview.png"
 import { Coins, FunnelPlus, LayoutDashboard, List, Wallet } from "lucide-react";
 
-export const assets = { logo, login_bg }
+export const assets = { logo, login_bg, dashboard_preview }
 
 export const SIDE_BAR_DATA = [
     {

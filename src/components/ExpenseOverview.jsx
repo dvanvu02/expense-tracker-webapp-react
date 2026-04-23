@@ -29,7 +29,7 @@ const ExpenseOverview = ({ transactions, onAddExpense }) => {
                 </div>
 
                 <button
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-green-50 text-green-800 font-semibold hover:bg-green-200 transition"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-green-50 text-green-800 font-semibold hover:bg-green-200 transition cursor-pointer"
                     onClick={onAddExpense}>
                     <Plus size={15} className="text-lg" />Add Expense
                 </button>

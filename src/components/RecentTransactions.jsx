@@ -8,7 +8,7 @@ const RecentTransactions = ({ transactions, onMore }) => {
             <div className="flex items-center justify-between group">
                 <h4 className="text-lg">Recent Transactions</h4>
 
-                <button className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-gray-100 hover:bg-gray-200 text-sm text-gray-700 transition-colors hover:bg-purple-100 hover:text-purple-700" onClick={onMore}>
+                <button className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-gray-100 hover:bg-gray-200 text-sm text-gray-700 transition-colors hover:bg-purple-100 hover:text-purple-700 cursor-pointer" onClick={onMore}>
                     More <ArrowRight className="text-base" size={15} />
                 </button>
             </div>
@@ -19,7 +19,7 @@ const RecentTransactions = ({ transactions, onMore }) => {
                         key={item.id}
                         title={item.name}
                         icon={item.icon}
-                        date={moment(item.date).format('Do MMM YYY')}
+                        date={moment(item.date).format('Do MMM YYYY')}
                         amount={item.amount}
                         type={item.type}
                         hideDeleteBtn

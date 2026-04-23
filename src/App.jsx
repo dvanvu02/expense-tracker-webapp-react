@@ -7,6 +7,7 @@ import Filter from "./pages/Filter";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Root />} />
+					<Route path="/home" element={<LandingPage />} />
 					<Route path="/signup" element={<Signup />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/dashboard" element={<Home />} />
@@ -33,7 +35,7 @@ const Root = () => {
 	return isAuthenticated ? (
 		<Navigate to="/dashboard" />
 	) : (
-		<Navigate to="/login" />
+		<Navigate to="/home" />
 	);
 }
 
