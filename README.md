@@ -4,6 +4,10 @@ A full-stack **Expense Tracker** web application that helps users manage their i
 
 ## 🚀 Live Demo: https://elegant-fenglisu-191de3.netlify.app/
 
+Account for testing: 
+- Email Address: admin@gmail
+- Password: admin123456
+
 ---
 
 ## ✨ Highlights
