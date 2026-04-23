@@ -14,9 +14,9 @@ const Navbar = () => {
                 </div>
             </Link>
             <div className="hidden md:flex gap-8 text-gray-600">
-                <a href="/home">Home</a>
-                <a href="/home">About us</a>
-                <a href="/home">Contact us</a>
+                <a href="/">Home</a>
+                <a href="/">About us</a>
+                <a href="/">Contact us</a>
             </div>
             <div className="flex items-center gap-4">
                 <button onClick={() => navigate('/login')} className="text-gray-700 font-medium hover:text-purple-700 cursor-pointer">Login</button>
