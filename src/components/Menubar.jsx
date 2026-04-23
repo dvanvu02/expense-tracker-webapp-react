@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { AppContext } from "../context/AppContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LogOut, Menu, User, X } from "lucide-react";
 import { assets } from "../assets/assets";
 import Sidebar from "./Sidebar";
@@ -16,7 +16,7 @@ const Menubar = ({ activeMenu }) => {
         localStorage.clear();
         clearUser();
         setShowDropdown(false);
-        navigate("/login");
+        navigate("/home");
     }
 
     useEffect(() => {
@@ -47,10 +47,12 @@ const Menubar = ({ activeMenu }) => {
                     )}
                 </button>
 
-                <div className="flex items-center gap-2">
-                    <img src={assets.logo} alt="logo" className="h-10 w-10" />
-                    <span className="text-lg font-medium text-black truncate">Expense Tracker</span>
-                </div>
+                <Link to="/home">
+                    <div className="flex items-center gap-2">
+                        <img src={assets.logo} alt="logo" className="h-10 w-10" />
+                        <span className="text-lg font-medium text-black truncate">Expense Tracker</span>
+                    </div>
+                </Link >
             </div>
 
             {/* Right side - Avatar photo  */}
